@@ -35,3 +35,6 @@ weatherForm.addEventListener("submit",(e)=>{
     }
     
 })
+
+//SSH -- Secure shell //private key in my computer
+//i send a public key to the machine that i want to communicate
