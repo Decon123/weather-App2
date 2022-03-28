@@ -1,0 +1,100 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: lightblue;
+    background-image: url("../images/raining.jpg");
+    width: 50%;
+    margin: auto;
+    font-family: sans-serif;
+    height: 100vh;
+    color: #fff;
+}
+input,.btn {
+    border: none;
+    outline: none;
+}
+img {
+    width: 100%;
+    
+    flex: 1;
+    padding: 1.5rem 0;
+}
+ul {
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+    color: darkcyan;
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    padding: 3rem 0 1.5rem;
+}
+.container h1 {
+    border: 3px solid lightcyan;
+    padding: .5rem;
+    width: max-content;
+}
+.navbar-items {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex: 1 1 100%;
+    padding-top: 1.5rem;
+}
+
+.footer {
+    margin-top: auto;
+    border-top: 3px solid lightcyan;
+}
+.footer p {
+    padding-top: 1.5rem;
+}
+.weather-guide {
+    margin: 3rem 0 1.5rem;
+    font-size: 1.3rem;
+    color: lightcyan;
+}
+.weather-form input#location{
+    padding: .5rem;
+    border: 2px solid darkcyan;
+}
+.weather-form .btn {
+    padding: .5rem 1.5rem;
+    font: inherit;
+    color: darkblue;
+    margin-left: .5rem;
+    border-radius: 30px;
+    background-color: lightcyan;
+    cursor: pointer;
+    font-weight: bold;
+}
+.message-1,.message-2 {
+    margin: 1.3rem 0;
+    padding: .5rem 2rem;
+}
+.error {
+    color: darkred;
+    background-color: #fff;
+    width: max-content;
+}
+
+@media (max-width:680px) {
+    .navbar-items {
+        flex-direction: column;
+        gap: 1.5rem;
+
+    }
+
+    .weather-form .btn {
+        margin:1.3rem 0;
+    }
+}
